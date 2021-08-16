@@ -2,21 +2,27 @@ const data = {
   products: [
     {
       id: '1',
-      name: 'MacBook',
-      price: 1400,
-      image: 'https://picsum.photos/id/180/2400/1600',
+      name: 'Pique Macho',
+      price: 90,
+      image: 'https://cdn.bolivia.com/gastronomia/2012/12/11/pique-macho-3502.jpg',
     },
     {
       id: '2',
-      name: 'Old Car',
-      price: 2400,
-      image: 'https://picsum.photos/id/111/4400/2656',
+      name: 'Picante de pollo',
+      price: 40,
+      image: 'https://www.opinion.com.bo/media/opinion/images/2012/04/01/2012S2760.jpg',
     },
     {
       id: '3',
-      name: 'W Shoes',
-      price: 1000,
-      image: 'https://picsum.photos/id/21/3008/2008',
+      name: 'Charque',
+      price: 70,
+      image: 'https://media-cdn.tripadvisor.com/media/photo-s/16/73/bb/6e/20190210-143134-largejpg.jpg',
+    },
+    {
+      id: '4',
+      name: 'Lomo a la paila',
+      price: 40,
+      image: 'https://i.ytimg.com/vi/FhkXr0_edxQ/sddefault.jpg',
     },
   ],
 };

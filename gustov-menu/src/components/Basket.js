@@ -1,11 +1,11 @@
 import React from 'react';
-import Swal from 'sweetalert2';
+import Swal from 'sweetalert2'
 
 export default function Basket(props) {
-  const { cartItems, onAdd, onRemove} = props;
+  const { cartItems, onAdd, onRemove } = props;
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
   const totalPrice = itemsPrice;
-  
+
   const checkout = () => {
     Swal.fire({
       title: 'Hacer pedido?',
@@ -31,7 +31,7 @@ export default function Basket(props) {
     <aside className="block col-1">
       <h2>Orden</h2>
       <div>
-        {cartItems.length === 0 && <div>Todavia no pidió nada</div>}
+        {cartItems.length === 0 && <div>Su orden está vacia</div>}
         {cartItems.map((item) => (
           <div key={item.id} className="row">
             <div className="col-2">{item.name}</div>
@@ -64,7 +64,7 @@ export default function Basket(props) {
             <hr />
             <div className="row">
               <button onClick={checkout}>
-                Registrar pedido
+                Registrar
               </button>
             </div>
           </>
